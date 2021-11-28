@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 21 Nov 2021 01:19:13",
+	"@generated": "Sun, 28 Nov 2021 01:26:49",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -128,7 +128,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1880"
+					"sourceid": "1900"
 				},
 				{
 					"pluginid": "10108",
@@ -257,7 +257,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1912"
+					"sourceid": "1928"
 				},
 				{
 					"pluginid": "90003",
@@ -1159,13 +1159,6 @@
 							"evidence": "fr/uploads/DINUM_SchemaPluriannuel_2020"
 						},
 						{
-							"uri": "https://beta.gouv.fr/approche/formation/mooc/sequence-3-mesurer-impact.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/content/docs/mooc/15-impact-Maintenant-pole-emploi"
-						},
-						{
 							"uri": "https://beta.gouv.fr/assets/images/favicons/safari-pinned-tab.svg",
 							"method": "GET",
 							"param": "",
@@ -1206,6 +1199,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "2Fpaquet-mobilite-soutien-a-l-accord-conclu-avec-les-ministres-de-l-ue"
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/la-bonne-alternance.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/u/0/reporting/1v-Sim2qMlFSMn4n9JJWaMk8PIONvM757/page/FZIGC"
 						},
 						{
 							"uri": "https://beta.gouv.fr/startups/transport.html",
@@ -1311,14 +1311,14 @@
 							"evidence": "select"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=culture",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "DB"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=culture",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1327,11 +1327,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-11-20';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-11-27';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "840"
+					"sourceid": "808"
 				},
 				{
 					"pluginid": "10109",
@@ -1444,70 +1444,70 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 22798"
+							"evidence": "Age: 41324"
 						},
 						{
 							"uri": "https://beta.gouv.fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 22799"
+							"evidence": "Age: 41325"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 22800"
+							"evidence": "Age: 41326"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 487"
+							"evidence": "Age: 1058"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 486"
+							"evidence": "Age: 1059"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 487"
+							"evidence": "Age: 1058"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 485"
+							"evidence": "Age: 1056"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 491"
+							"evidence": "Age: 1062"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 486"
+							"evidence": "Age: 1058"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 12547"
+							"evidence": "Age: 1063"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
@@ -1521,7 +1521,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 487"
+							"evidence": "Age: 1058"
 						}
 					],
 					"count": "12",
@@ -1729,7 +1729,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "891"
+					"sourceid": "852"
 				}
 			]
 		}
