@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 28 Nov 2021 01:26:49",
+	"@generated": "Sun, 5 Dec 2021 01:21:18",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -8,6 +8,32 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
+				{
+					"pluginid": "10062",
+					"alertRef": "10062",
+					"alert": "PII Disclosure",
+					"name": "PII Disclosure",
+					"riskcode": "3",
+					"confidence": "3",
+					"riskdesc": "High (High)",
+					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
+					"instances":[ 
+						{
+							"uri": "https://beta.gouv.fr/content/docs/StateStartups-Foucaud.pdf",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "5001000444444333333"
+						}
+					],
+					"count": "1",
+					"solution": "",
+					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 500100</p><p>Brand: MAESTRO</p><p>Category: </p><p>Issuer: </p>",
+					"reference": "",
+					"cweid": "359",
+					"wascid": "13",
+					"sourceid": "2026"
+				},
 				{
 					"pluginid": "10038",
 					"alertRef": "10038",
@@ -128,110 +154,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1900"
-				},
-				{
-					"pluginid": "10108",
-					"alertRef": "10108",
-					"alert": "Reverse Tabnabbing",
-					"name": "Reverse Tabnabbing",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>At least one link on this page is vulnerable to Reverse tabnabbing as it uses a target attribute without using both of the \"noopener\" and \"noreferrer\" keywords in the \"rel\" attribute, which allows the target page to take control of this page.</p>",
-					"instances":[ 
-						{
-							"uri": "https://beta.gouv.fr/communaute/annuaire",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm fr-tag--inactive\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/recrutement/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"fr-btn\" href=\"https://airtable.com/shrzxJlITsisv09L6\" target=\"_blank\"><span class=\"fr-fi-external-link-line\"></span>Candidature spontan\u00E9e</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/aidantsconnect.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm fr-tag--inactive\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/aides.jeunes.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/annuaire-entreprises.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm fr-tag--inactive\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/api.gouv.fr.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm fr-tag--inactive\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/aplus.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/camino.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/datapass.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm fr-tag--inactive\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/leximpact.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/tchap.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm fr-tag--inactive\" target=\"_self\">OpenFisca</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/transport.html",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a href=\"https://openfisca.org\" class=\"fr-tag fr-tag--sm\" target=\"_self\">OpenFisca</a>"
-						}
-					],
-					"count": "12",
-					"solution": "<p>Do not use a target attribute, or if you have to then also add the attribute: rel=\"noopener noreferrer\".</p>",
-					"otherinfo": "",
-					"reference": "<p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p>",
-					"cweid": "-1",
-					"wascid": "-1",
-					"sourceid": "57"
+					"sourceid": "1909"
 				},
 				{
 					"pluginid": "10099",
@@ -257,7 +180,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1928"
+					"sourceid": "1938"
 				},
 				{
 					"pluginid": "90003",
@@ -274,7 +197,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' type='text/css' href='https://d33wubrfki0l68.cloudfront.net/bundles/9b0846bb22636cf3a5fe7c83983ed67bee5931e4.css'/>"
+							"evidence": "<link rel='stylesheet' type='text/css' href='https://d33wubrfki0l68.cloudfront.net/bundles/4ffa63ff369b5bb59cd1f9b2a6f92a040aaeb619.css'/>"
 						},
 						{
 							"uri": "https://beta.gouv.fr",
@@ -302,7 +225,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' type='text/css' href='https://d33wubrfki0l68.cloudfront.net/bundles/30538215c2f6c55a2359ab380839de56f56fa767.css'/>"
+							"evidence": "<link rel='stylesheet' type='text/css' href='https://d33wubrfki0l68.cloudfront.net/bundles/2df7ab30f65cc05bf1d50fb48b0eb2cbf0d0d9bb.css'/>"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
@@ -1311,14 +1234,14 @@
 							"evidence": "select"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=culture",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "DB"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=culture",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1327,11 +1250,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-11-27';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-12-04';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "808"
+					"sourceid": "854"
 				},
 				{
 					"pluginid": "10109",
@@ -1444,70 +1367,63 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 41324"
-						},
-						{
-							"uri": "https://beta.gouv.fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 41325"
+							"evidence": "Age: 847"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 41326"
+							"evidence": "Age: 848"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1058"
+							"evidence": "Age: 375"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1059"
+							"evidence": "Age: 375"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1058"
+							"evidence": "Age: 375"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1056"
+							"evidence": "Age: 373"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1062"
+							"evidence": "Age: 379"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1058"
+							"evidence": "Age: 375"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1063"
+							"evidence": "Age: 380"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
@@ -1521,10 +1437,10 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1058"
+							"evidence": "Age: 374"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1729,7 +1645,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "852"
+					"sourceid": "855"
 				}
 			]
 		}
