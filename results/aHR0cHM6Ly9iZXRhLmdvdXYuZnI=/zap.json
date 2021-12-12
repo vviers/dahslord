@@ -1,6 +1,6 @@
 {
-	"@version": "2.11.0",
-	"@generated": "Sun, 5 Dec 2021 01:21:18",
+	"@version": "2.11.1",
+	"@generated": "Sun, 12 Dec 2021 01:21:03",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2026"
+					"sourceid": "2047"
 				},
 				{
 					"pluginid": "10038",
@@ -154,7 +154,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1909"
+					"sourceid": "1932"
 				},
 				{
 					"pluginid": "10099",
@@ -180,7 +180,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1938"
+					"sourceid": "1961"
 				},
 				{
 					"pluginid": "90003",
@@ -197,7 +197,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' type='text/css' href='https://d33wubrfki0l68.cloudfront.net/bundles/4ffa63ff369b5bb59cd1f9b2a6f92a040aaeb619.css'/>"
+							"evidence": "<link rel='stylesheet' type='text/css' href='https://d33wubrfki0l68.cloudfront.net/bundles/5246a0064f4c8ceb9f58c33a99b99aa754a835fb.css'/>"
 						},
 						{
 							"uri": "https://beta.gouv.fr",
@@ -225,7 +225,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link rel='stylesheet' type='text/css' href='https://d33wubrfki0l68.cloudfront.net/bundles/2df7ab30f65cc05bf1d50fb48b0eb2cbf0d0d9bb.css'/>"
+							"evidence": "<link rel='stylesheet' type='text/css' href='https://d33wubrfki0l68.cloudfront.net/bundles/751be1df9f6a9105586381ca6f28bab3b21b689d.css'/>"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
@@ -952,7 +952,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "57"
+					"sourceid": "58"
 				},
 				{
 					"pluginid": "10021",
@@ -1250,11 +1250,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-12-04';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-12-11';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "854"
+					"sourceid": "863"
 				},
 				{
 					"pluginid": "10109",
@@ -1367,77 +1367,77 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 847"
+							"evidence": "Age: 1175"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 848"
+							"evidence": "Age: 1176"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 375"
+							"evidence": "Age: 1170"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 375"
+							"evidence": "Age: 1170"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 375"
+							"evidence": "Age: 1170"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 373"
+							"evidence": "Age: 1169"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 379"
+							"evidence": "Age: 1174"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 375"
+							"evidence": "Age: 1170"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 380"
+							"evidence": "Age: 1175"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "Age: 731"
 						},
 						{
 							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 374"
+							"evidence": "Age: 1170"
 						}
 					],
 					"count": "11",
@@ -1645,7 +1645,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "855"
+					"sourceid": "864"
 				}
 			]
 		}
