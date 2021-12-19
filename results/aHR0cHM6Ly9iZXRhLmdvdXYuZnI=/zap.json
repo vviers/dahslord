@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 12 Dec 2021 01:21:03",
+	"@generated": "Sun, 19 Dec 2021 01:24:06",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2047"
+					"sourceid": "2174"
 				},
 				{
 					"pluginid": "10038",
@@ -154,7 +154,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1932"
+					"sourceid": "2059"
 				},
 				{
 					"pluginid": "10099",
@@ -180,7 +180,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1961"
+					"sourceid": "2088"
 				},
 				{
 					"pluginid": "90003",
@@ -385,42 +385,42 @@
 							"evidence": "<script type='module' src='https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js'></script>"
 						},
 						{
-							"uri": "https://beta.gouv.fr/robots.txt",
+							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js",
 							"attack": "",
 							"evidence": "<script type='text/javascript' src='https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js'></script>"
 						},
 						{
-							"uri": "https://beta.gouv.fr/robots.txt",
+							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js",
 							"attack": "",
 							"evidence": "<script type='text/javascript' nomodule src='https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js'></script>"
 						},
 						{
-							"uri": "https://beta.gouv.fr/robots.txt",
+							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js",
 							"attack": "",
 							"evidence": "<script type='module' src='https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js'></script>"
 						},
 						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
+							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js",
 							"attack": "",
 							"evidence": "<script type='text/javascript' src='https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js'></script>"
 						},
 						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
+							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js",
 							"attack": "",
 							"evidence": "<script type='text/javascript' nomodule src='https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js'></script>"
 						},
 						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
+							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js",
 							"attack": "",
@@ -952,7 +952,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "79"
 				},
 				{
 					"pluginid": "10021",
@@ -1107,7 +1107,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/recrutement/2021/10/28/Product-Owner-territoires-en-transitions"
+							"evidence": "/recrutement/2021/12/14/developpeur-Front-End-territoires-en-transitions"
 						},
 						{
 							"uri": "https://beta.gouv.fr/startups",
@@ -1175,7 +1175,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "bugs"
+							"evidence": "bug"
 						},
 						{
 							"uri": "https://beta.gouv.fr/startups",
@@ -1250,11 +1250,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-12-11';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-12-18';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "863"
+					"sourceid": "926"
 				},
 				{
 					"pluginid": "10109",
@@ -1367,80 +1367,87 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1175"
+							"evidence": "Age: 3656"
+						},
+						{
+							"uri": "https://beta.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 3657"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1176"
+							"evidence": "Age: 3657"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1170"
+							"evidence": "Age: 400"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1170"
+							"evidence": "Age: 398"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1170"
+							"evidence": "Age: 398"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1169"
+							"evidence": "Age: 395"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1174"
+							"evidence": "Age: 402"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1170"
+							"evidence": "Age: 398"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1175"
+							"evidence": "Age: 6932"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 731"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1170"
+							"evidence": "Age: 398"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1645,7 +1652,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "864"
+					"sourceid": "925"
 				}
 			]
 		}

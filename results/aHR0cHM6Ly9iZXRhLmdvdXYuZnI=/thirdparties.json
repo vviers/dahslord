@@ -55,7 +55,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1639273894,
+      "expires": 1639878875,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -67,10 +67,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "a9a6f6f82f7f5532.1639272094.",
+      "value": "359cee1e20226b80.1639877075.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1673227294,
+      "expires": 1673832275,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -84,14 +84,14 @@
   "headers": {
     "cache-control": "public, max-age=0, must-revalidate",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 12 Dec 2021 01:03:20 GMT",
-    "etag": "\"179868e3a3f4a430e7e60789bc76c34e-ssl-df\"",
+    "date": "Sat, 18 Dec 2021 17:35:58 GMT",
+    "etag": "\"ff79e56307d697e91fd6b6e738531d86-ssl-df\"",
     "strict-transport-security": "max-age=31536000",
     "content-encoding": "br",
-    "age": "1093",
+    "age": "28116",
     "vary": "Accept-Encoding",
-    "x-nf-request-id": "01FPP3P5W8CT8YK7W1B9NK9T8N",
-    "content-length": "10761",
+    "x-nf-request-id": "01FQ84MQ7D5YQW4K490YPFQMHE",
+    "content-length": "10944",
     "server": "Netlify"
   },
   "endpoints": [
@@ -151,58 +151,41 @@
     },
     {
       "hostname": "d33wubrfki0l68.cloudfront.net",
-      "ip": "54.239.153.175",
+      "ip": "13.225.231.127",
       "geoip": {
-        "city": {
-          "geoname_id": 2867714,
-          "names": {
-            "de": "München",
-            "en": "Munich",
-            "es": "Múnich",
-            "fr": "Munich",
-            "ja": "ミュンヘン",
-            "pt-BR": "Munique",
-            "ru": "Мюнхен",
-            "zh-CN": "慕尼黑"
-          }
-        },
         "continent": {
-          "code": "EU",
-          "geoname_id": 6255148,
+          "code": "NA",
+          "geoname_id": 6255149,
           "names": {
-            "de": "Europa",
-            "en": "Europe",
-            "es": "Europa",
-            "fr": "Europe",
-            "ja": "ヨーロッパ",
-            "pt-BR": "Europa",
-            "ru": "Европа",
-            "zh-CN": "欧洲"
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
           }
         },
         "country": {
-          "geoname_id": 2921044,
-          "is_in_european_union": true,
-          "iso_code": "DE",
+          "geoname_id": 6252001,
+          "iso_code": "US",
           "names": {
-            "de": "Deutschland",
-            "en": "Germany",
-            "es": "Alemania",
-            "fr": "Allemagne",
-            "ja": "ドイツ連邦共和国",
-            "pt-BR": "Alemanha",
-            "ru": "Германия",
-            "zh-CN": "德国"
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
           }
         },
         "location": {
-          "accuracy_radius": 100,
-          "latitude": 48.1663,
-          "longitude": 11.5683,
-          "time_zone": "Europe/Berlin"
-        },
-        "postal": {
-          "code": "80539"
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -217,23 +200,7 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 2951839,
-            "iso_code": "BY",
-            "names": {
-              "de": "Bayern",
-              "en": "Bavaria",
-              "es": "Baviera",
-              "fr": "Bavière",
-              "ja": "バイエルン州",
-              "pt-BR": "Baviera",
-              "ru": "Бавария",
-              "zh-CN": "巴伐利亚"
-            }
-          }
-        ]
+        }
       }
     }
   ]
