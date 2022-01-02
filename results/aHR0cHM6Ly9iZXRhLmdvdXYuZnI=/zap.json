@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 26 Dec 2021 01:25:38",
+	"@generated": "Sun, 2 Jan 2022 01:23:34",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2186"
+					"sourceid": "2191"
 				},
 				{
 					"pluginid": "10038",
@@ -154,7 +154,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "2077"
+					"sourceid": "2082"
 				},
 				{
 					"pluginid": "10099",
@@ -180,7 +180,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2110"
+					"sourceid": "2115"
 				},
 				{
 					"pluginid": "90003",
@@ -952,7 +952,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "81"
+					"sourceid": "58"
 				},
 				{
 					"pluginid": "10021",
@@ -1250,11 +1250,11 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2021-12-23';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2022-01-02';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "933"
+					"sourceid": "932"
 				},
 				{
 					"pluginid": "10109",
@@ -1367,63 +1367,70 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 111691"
+							"evidence": "Age: 331"
+						},
+						{
+							"uri": "https://beta.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 332"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 111692"
+							"evidence": "Age: 332"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 393"
+							"evidence": "Age: 326"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 392"
+							"evidence": "Age: 327"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 392"
+							"evidence": "Age: 326"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 391"
+							"evidence": "Age: 325"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 396"
+							"evidence": "Age: 330"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 392"
+							"evidence": "Age: 327"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 74253"
+							"evidence": "Age: 331"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
@@ -1437,10 +1444,10 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 392"
+							"evidence": "Age: 327"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
