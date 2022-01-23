@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln beta.gouv.fr</pre>
-<p class="lead">Sun Jan 16 01:27:28 2022 – Sun Jan 16 01:27:56 2022<br>1 hosts scanned.
+<p class="lead">Sun Jan 23 01:20:43 2022 – Sun Jan 23 01:21:11 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -125,16 +125,25 @@
   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     content-length: 0
-    date: Sun, 16 Jan 2022 01:27:44 GMT
-  FourOhFourRequest, GetRequest, HTTPOptions: 
+    date: Sun, 23 Jan 2022 01:20:59 GMT
+  FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
     content-length: 19
-    date: Sun, 16 Jan 2022 01:27:39 GMT
+    date: Sun, 23 Jan 2022 01:20:54 GMT
     Missing host header
-  RTSPRequest, X11Probe: 
+  GetRequest, HTTPOptions: 
+    HTTP/1.0 400 Bad Request
+    content-length: 19
+    date: Sun, 23 Jan 2022 01:20:53 GMT
+    Missing host header
+  RTSPRequest: 
     HTTP/1.1 400 Bad Request
     content-length: 0
-    date: Sun, 16 Jan 2022 01:27:39 GMT</pre>
+    date: Sun, 23 Jan 2022 01:20:54 GMT
+  X11Probe: 
+    HTTP/1.1 400 Bad Request
+    content-length: 0
+    date: Sun, 23 Jan 2022 01:20:53 GMT</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
@@ -150,27 +159,32 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, SSLSessionReq, TerminalServerCookie: 
+  DNSStatusRequestTCP, Help, Kerberos, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     content-length: 0
-    date: Sun, 16 Jan 2022 01:27:51 GMT
-  FourOhFourRequest, GetRequest, HTTPOptions: 
+    date: Sun, 23 Jan 2022 01:21:06 GMT
+  DNSVersionBindReqTCP, RPCCheck, RTSPRequest: 
+    HTTP/1.1 400 Bad Request
+    content-length: 0
+    date: Sun, 23 Jan 2022 01:21:05 GMT
+  FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
     content-length: 19
-    date: Sun, 16 Jan 2022 01:27:45 GMT
+    date: Sun, 23 Jan 2022 01:21:00 GMT
     Missing host header
-  Kerberos, SMBProgNeg, TLSSessionReq: 
+  GetRequest, HTTPOptions: 
+    HTTP/1.0 400 Bad Request
+    content-length: 19
+    date: Sun, 23 Jan 2022 01:20:59 GMT
+    Missing host header
+  SMBProgNeg: 
     HTTP/1.1 400 Bad Request
     content-length: 0
-    date: Sun, 16 Jan 2022 01:27:52 GMT
-  RTSPRequest: 
-    HTTP/1.1 400 Bad Request
-    content-length: 0
-    date: Sun, 16 Jan 2022 01:27:50 GMT
+    date: Sun, 23 Jan 2022 01:21:07 GMT
   tor-versions: 
     HTTP/1.1 400 Bad Request
     content-length: 0
-    date: Sun, 16 Jan 2022 01:27:45 GMT</pre>
+    date: Sun, 23 Jan 2022 01:20:59 GMT</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
