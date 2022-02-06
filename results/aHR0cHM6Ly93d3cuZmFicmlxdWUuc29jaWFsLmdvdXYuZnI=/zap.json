@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 30 Jan 2022 01:09:55",
+	"@generated": "Sun, 6 Feb 2022 01:17:50",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "278"
+					"sourceid": "257"
 				},
 				{
 					"pluginid": "10055",
@@ -434,22 +434,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "308308616"
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/release-v3.2.0",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "308308616"
 						}
 					],
-					"count": "14",
+					"count": "13",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1073741823, which evaluates to: 2004-01-10 13:37:03</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "277"
+					"sourceid": "256"
 				},
 				{
 					"pluginid": "10094",
