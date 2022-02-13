@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 6 Feb 2022 01:25:52
+		Generated on Sun, 13 Feb 2022 01:25:07
 	</h3>
 
 	
@@ -144,7 +144,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>0</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -194,6 +194,11 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
+				<td><a href="#10062">PII Disclosure</a></td>
+				<td align="center" class="risk-3">High</td>
+				<td align="center">1</td>
+			</tr>
+			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">11</td>
@@ -241,7 +246,7 @@ td {
 			<tr>
 				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">43</td>
+				<td align="center">44</td>
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
@@ -284,6 +289,79 @@ td {
 
 	
 		<h3>Alert Detail</h3>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-3"><a
+						id="10062"></a>
+						<div>High</div></th>
+					<th class="risk-3">PII Disclosure</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://beta.gouv.fr/content/docs/StateStartups-Foucaud.pdf">https://beta.gouv.fr/content/docs/StateStartups-Foucaud.pdf</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">5001000444444333333</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">1</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/359.html">359</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10062/">10062</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
 		
 			<table class="results">
 				<tr height="24">
@@ -1186,7 +1264,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&#39;stylesheet&#39; type=&#39;text/css&#39; href=&#39;https://d33wubrfki0l68.cloudfront.net/bundles/5246a0064f4c8ceb9f58c33a99b99aa754a835fb.css&#39;/&gt;</td>
+						<td width="80%">&lt;link href=&#39;https://d33wubrfki0l68.cloudfront.net/bundles/5246a0064f4c8ceb9f58c33a99b99aa754a835fb.css&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;/&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1212,7 +1290,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;module&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1238,7 +1316,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1264,7 +1342,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39; type=&#39;module&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1290,7 +1368,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&#39;stylesheet&#39; type=&#39;text/css&#39; href=&#39;https://d33wubrfki0l68.cloudfront.net/bundles/751be1df9f6a9105586381ca6f28bab3b21b689d.css&#39;/&gt;</td>
+						<td width="80%">&lt;link href=&#39;https://d33wubrfki0l68.cloudfront.net/bundles/751be1df9f6a9105586381ca6f28bab3b21b689d.css&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;/&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1316,7 +1394,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;module&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1342,7 +1420,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1368,7 +1446,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39; type=&#39;module&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -1615,7 +1693,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1641,7 +1719,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1667,7 +1745,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;module&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39; type=&#39;module&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1693,7 +1771,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1719,7 +1797,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1745,7 +1823,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;module&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39; type=&#39;module&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1771,7 +1849,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/0f62d6c2c169e85fe272b16c7673aeed5009161c/assets/additional/js/lozad.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1797,7 +1875,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;text/javascript&#39; nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script nomodule src=&#39;https://d33wubrfki0l68.cloudfront.net/js/2221bb3459bcbe993b4165e4239721b835da037d/assets/gouvfr/js/dsfr.nomodule.min.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1823,7 +1901,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script type=&#39;module&#39; src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&#39;https://d33wubrfki0l68.cloudfront.net/js/b8fcb6f7d29a9cf5497b26b4ab17c3f90d049747/assets/gouvfr/js/dsfr.module.min.js&#39; type=&#39;module&#39;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -3034,6 +3112,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%">252434307</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://beta.gouv.fr/communaute/annuaire">https://beta.gouv.fr/communaute/annuaire</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
 						<td width="80%">269474141</td>
 					</tr>
 				
@@ -3689,7 +3793,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">43</td>
+					<td width="80%">44</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -4713,7 +4817,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://beta.gouv.fr/startups/?incubateur=bercy">https://beta.gouv.fr/startups/?incubateur=bercy</a></td>
+						<td width="80%"><a href="https://beta.gouv.fr/startups/?incubateur=culture">https://beta.gouv.fr/startups/?incubateur=culture</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -4739,7 +4843,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://beta.gouv.fr/startups/?incubateur=bercy">https://beta.gouv.fr/startups/?incubateur=bercy</a></td>
+						<td width="80%"><a href="https://beta.gouv.fr/startups/?incubateur=culture">https://beta.gouv.fr/startups/?incubateur=culture</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -5170,7 +5274,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 34998</td>
+						<td width="80%">Age: 31315</td>
 					</tr>
 				
 					<tr>
@@ -5196,7 +5300,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 34999</td>
+						<td width="80%">Age: 31316</td>
 					</tr>
 				
 					<tr>
@@ -5222,7 +5326,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 34999</td>
+						<td width="80%">Age: 31316</td>
 					</tr>
 				
 					<tr>
@@ -5248,7 +5352,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 345</td>
+						<td width="80%">Age: 354</td>
 					</tr>
 				
 					<tr>
@@ -5274,7 +5378,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 345</td>
+						<td width="80%">Age: 355</td>
 					</tr>
 				
 					<tr>
@@ -5300,7 +5404,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 346</td>
+						<td width="80%">Age: 354</td>
 					</tr>
 				
 					<tr>
@@ -5326,7 +5430,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 343</td>
+						<td width="80%">Age: 351</td>
 					</tr>
 				
 					<tr>
@@ -5352,7 +5456,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 348</td>
+						<td width="80%">Age: 358</td>
 					</tr>
 				
 					<tr>
@@ -5378,7 +5482,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 345</td>
+						<td width="80%">Age: 353</td>
 					</tr>
 				
 					<tr>
@@ -5404,7 +5508,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 946</td>
+						<td width="80%">Age: 359</td>
 					</tr>
 				
 					<tr>
@@ -5456,7 +5560,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 345</td>
+						<td width="80%">Age: 353</td>
 					</tr>
 				
 				<tr>
