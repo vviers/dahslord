@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 20 Feb 2022 01:24:59",
+	"@generated": "Sun, 27 Feb 2022 01:27:30",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "359",
 					"wascid": "13",
-					"sourceid": "2255"
+					"sourceid": "2320"
 				},
 				{
 					"pluginid": "10038",
@@ -145,7 +145,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "access-control-allow-origin: *"
+							"evidence": "Access-Control-Allow-Origin: *"
 						}
 					],
 					"count": "1",
@@ -154,7 +154,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1354"
+					"sourceid": "2216"
 				},
 				{
 					"pluginid": "10020",
@@ -182,13 +182,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/approche/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -223,13 +216,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/contact",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -237,7 +223,21 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/recrutement/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/startups/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/la-bonne-alternance.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -276,7 +276,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2243"
+					"sourceid": "2249"
 				},
 				{
 					"pluginid": "90003",
@@ -500,13 +500,6 @@
 							"evidence": "public, max-age=0, must-revalidate"
 						},
 						{
-							"uri": "https://beta.gouv.fr/approche/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "public, max-age=0, must-revalidate"
-						},
-						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -535,13 +528,6 @@
 							"evidence": "public, max-age=0, must-revalidate"
 						},
 						{
-							"uri": "https://beta.gouv.fr/contact",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "public, max-age=0, must-revalidate"
-						},
-						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -549,7 +535,21 @@
 							"evidence": "public, max-age=0, must-revalidate"
 						},
 						{
+							"uri": "https://beta.gouv.fr/recrutement/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
 							"uri": "https://beta.gouv.fr/startups/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/la-bonne-alternance.html",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -985,7 +985,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "80"
 				},
 				{
 					"pluginid": "10021",
@@ -1013,13 +1013,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/approche/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1054,13 +1047,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/contact",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -1068,7 +1054,21 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/recrutement/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/startups/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/la-bonne-alternance.html",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1190,6 +1190,13 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
+							"uri": "https://beta.gouv.fr/communaute",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
@@ -1260,27 +1267,27 @@
 							"evidence": "select"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=culture",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "DB"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=culture",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2022-02-18';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\"></p><p>    (function() {</p><p>        window.buildDate = '2022-02-25';</p><p>        window.data = {\"employer\":{\"a\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "83"
+					"sourceid": "991"
 				},
 				{
 					"pluginid": "10109",
@@ -1393,80 +1400,87 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 68647"
+							"evidence": "Age: 75168"
+						},
+						{
+							"uri": "https://beta.gouv.fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 75169"
 						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 68647"
+							"evidence": "Age: 75169"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1826"
+							"evidence": "Age: 292"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1826"
+							"evidence": "Age: 292"
 						},
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1826"
+							"evidence": "Age: 292"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1823"
+							"evidence": "Age: 289"
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1829"
+							"evidence": "Age: 295"
 						},
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1826"
+							"evidence": "Age: 22545"
 						},
 						{
 							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 10554"
+							"evidence": "Age: 296"
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1380"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1825"
+							"evidence": "Age: 292"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -1671,7 +1685,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "985"
+					"sourceid": "992"
 				}
 			]
 		}
