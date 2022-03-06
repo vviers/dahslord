@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 27 Feb 2022 01:18:44",
+	"@generated": "Sun, 6 Mar 2022 01:19:13",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "259"
+					"sourceid": "278"
 				},
 				{
 					"pluginid": "10038",
@@ -66,20 +66,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/faq/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/feed.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
 							"method": "GET",
 							"param": "",
@@ -94,13 +80,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/mentions-legales/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -109,6 +88,27 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/e-mjpm/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/fce/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -162,20 +162,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/declaration-accessibilite",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/faq/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -190,7 +176,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/mentions-legales/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/domifa/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -205,6 +198,13 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/fce/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/mano/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -258,20 +258,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/faq/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/feed.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
 							"method": "GET",
 							"param": "",
@@ -286,13 +272,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/mentions-legales/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -301,6 +280,27 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/e-mjpm/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/fce/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -422,15 +422,22 @@
 							"param": "",
 							"attack": "",
 							"evidence": "308308616"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/release-v3.2.0",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "308308616"
 						}
 					],
-					"count": "13",
+					"count": "14",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1073741823, which evaluates to: 2004-01-10 13:37:03</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "258"
+					"sourceid": "277"
 				},
 				{
 					"pluginid": "10094",
@@ -464,20 +471,6 @@
 							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/faq/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/feed.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
 							"method": "GET",
 							"param": "",
@@ -492,13 +485,6 @@
 							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/mentions-legales/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -507,6 +493,27 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/e-mjpm/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/fce/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -560,20 +567,6 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/faq/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/feed.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
 							"method": "GET",
 							"param": "",
@@ -588,13 +581,6 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/mentions-legales/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -603,6 +589,27 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/e-mjpm/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/fce/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -656,20 +663,6 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/faq/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>"
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/feed.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
 							"method": "GET",
 							"param": "",
@@ -684,13 +677,6 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/mentions-legales/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -699,6 +685,27 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/e-mjpm/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/fce/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -752,20 +759,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/faq/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/feed.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
 							"method": "GET",
 							"param": "",
@@ -780,13 +773,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/mentions-legales/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -795,6 +781,27 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/e-mjpm/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/fce/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
