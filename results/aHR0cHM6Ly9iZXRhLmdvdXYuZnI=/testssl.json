@@ -353,7 +353,7 @@
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "85 >= 30 days"
+              "finding"      : "78 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,14 +556,14 @@
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1645849694"
+              "finding"      : "1646458356"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "75627 seconds"
+              "finding"      : "71681 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1133,6 +1133,6 @@
               "ip"           : "beta.gouv.fr/75.2.60.5",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "66"
+              "finding"      : "53"
           }
 ]
