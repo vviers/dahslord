@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln beta.gouv.fr</pre>
-<p class="lead">Sun Mar 27 01:51:28 2022 – Sun Mar 27 01:53:13 2022<br>1 hosts scanned.
+<p class="lead">Sun Apr  3 02:02:27 2022 – Sun Apr  3 02:02:51 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>75.2.60.5</td>
+<td>5.104.101.30</td>
 <td>beta.gouv.fr</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#75-2-60-5"><h3 class="panel-title">75.2.60.5 - beta.gouv.fr</h3></div>
-<div class="panel-body collapse in" id="75-2-60-5">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#5-104-101-30"><h3 class="panel-title">5.104.101.30 - beta.gouv.fr</h3></div>
+<div class="panel-body collapse in" id="5-104-101-30">
 <h4>Hostnames</h4>
 <ul>
 <li>beta.gouv.fr (user)</li>
-<li>acd89244c803f7181.awsglobalaccelerator.com (PTR)</li>
+<li>ows-5-104-101-30.eu-west-2.compute.outscale.com (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -115,82 +115,26 @@
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">http</td>
-<td title="Product">Netlify</td>
+<td title="Product">OpenResty web app server</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 27 Mar 2022 01:51:43 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01FZ4H4W5GKBWBF781HP3CF5N9
-  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
-    HTTP/1.1 400 Bad Request
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request
-  GetRequest: 
-    HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 27 Mar 2022 01:51:38 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01FZ4H4Q1ED5JBPBTRZSXG72KY
-  HTTPOptions: 
-    HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 27 Mar 2022 01:51:38 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01FZ4H4Q447XZ33YRRZ3S6GX6A</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:openresty:ngx_openresty">cpe:/a:openresty:ngx_openresty</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">openresty</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">https</td>
-<td title="Product">Netlify</td>
+<td title="Service">http</td>
+<td title="Product">OpenResty web app server</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 27 Mar 2022 01:51:44 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01FZ4H4X91ZA3M9SC02F3YG0WM
-  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
-    HTTP/1.1 400 Bad Request
-    Content-Type: text/plain; charset=utf-8
-    Connection: close
-    Request
-  GetRequest: 
-    HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 27 Mar 2022 01:51:44 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01FZ4H4X185CAFYRMWZQTWMVKB
-  HTTPOptions: 
-    HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 27 Mar 2022 01:51:44 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01FZ4H4X56J4Y7QS6NPMVT74EE</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:openresty:ngx_openresty">cpe:/a:openresty:ngx_openresty</a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">openresty</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -210,23 +154,23 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>75.2.60.5 - beta.gouv.fr</td>
+<td>5.104.101.30 - beta.gouv.fr</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
-<td>Netlify</td>
+<td>OpenResty web app server</td>
 <td></td>
-<td></td>
+<td>cpe:/a:openresty:ngx_openresty</td>
 <td></td>
 </tr>
 <tr>
-<td>75.2.60.5 - beta.gouv.fr</td>
+<td>5.104.101.30 - beta.gouv.fr</td>
 <td>443</td>
 <td>tcp</td>
-<td>https</td>
-<td>Netlify</td>
+<td>http</td>
+<td>OpenResty web app server</td>
 <td></td>
-<td></td>
+<td>cpe:/a:openresty:ngx_openresty</td>
 <td></td>
 </tr>
 </tbody>
