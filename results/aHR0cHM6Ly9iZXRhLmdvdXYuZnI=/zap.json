@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 1 May 2022 02:36:04",
+	"@generated": "Sun, 8 May 2022 02:07:53",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -234,6 +234,32 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "10099",
+					"alertRef": "10099",
+					"alert": "Source Code Disclosure - Perl",
+					"name": "Source Code Disclosure - Perl",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>Application Source Code was disclosed by the web server - Perl</p>",
+					"instances":[ 
+						{
+							"uri": "https://beta.gouv.fr/content/docs/rapportannuel.pdf",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "$#fGIEh"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
+					"otherinfo": "<p>$#fGIEh</p>",
+					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
+					"cweid": "540",
+					"wascid": "13",
+					"sourceid": "2475"
+				},
+				{
 					"pluginid": "90003",
 					"alertRef": "90003",
 					"alert": "Sub Resource Integrity Attribute Missing",
@@ -300,6 +326,20 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://unpkg.com/jquery@2.2.2/dist/jquery.min.js\"></script>"
 						},
 						{
+							"uri": "https://beta.gouv.fr/stats",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js\"></script>"
+						},
+						{
+							"uri": "https://beta.gouv.fr/stats",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://unpkg.com/jquery@2.2.2/dist/jquery.min.js\"></script>"
+						},
+						{
 							"uri": "https://beta.gouv.fr/stats/",
 							"method": "GET",
 							"param": "",
@@ -314,13 +354,13 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://unpkg.com/jquery@2.2.2/dist/jquery.min.js\"></script>"
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1102"
+					"sourceid": "1101"
 				},
 				{
 					"pluginid": "10017",
@@ -389,6 +429,20 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://unpkg.com/jquery@2.2.2/dist/jquery.min.js\"></script>"
 						},
 						{
+							"uri": "https://beta.gouv.fr/stats",
+							"method": "GET",
+							"param": "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js\"></script>"
+						},
+						{
+							"uri": "https://beta.gouv.fr/stats",
+							"method": "GET",
+							"param": "https://unpkg.com/jquery@2.2.2/dist/jquery.min.js",
+							"attack": "",
+							"evidence": "<script type=\"text/javascript\" src=\"https://unpkg.com/jquery@2.2.2/dist/jquery.min.js\"></script>"
+						},
+						{
 							"uri": "https://beta.gouv.fr/stats/",
 							"method": "GET",
 							"param": "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js",
@@ -403,13 +457,13 @@
 							"evidence": "<script type=\"text/javascript\" src=\"https://unpkg.com/jquery@2.2.2/dist/jquery.min.js\"></script>"
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1102"
+					"sourceid": "1101"
 				},
 				{
 					"pluginid": "10063",
@@ -1023,13 +1077,6 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://beta.gouv.fr/assets/additional/js/search-startup.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select"
-						},
-						{
 							"uri": "https://beta.gouv.fr/assets/gouvfr/js/dsfr.module.min.js",
 							"method": "GET",
 							"param": "",
@@ -1105,15 +1152,29 @@
 							"param": "",
 							"attack": "",
 							"evidence": "TODO"
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/?incubateur=apigouv",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select"
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/?incubateur=apigouv",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "TODO"
 						}
 					],
-					"count": "12",
+					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bSELECT\\b and was detected 2 times, the first in the element starting with: \"    var selectIncubator = document.getElementById('select-incubateur');\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"const t=window.dsfr||{core:{}};window.dsfr=t;const e=t=>`fr-${t}`;e.selector=(t,s)=>(void 0===s&&(s=\".\"),`${s}${e(t)}`),(e.attr=\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1460"
+					"sourceid": "1026"
 				},
 				{
 					"pluginid": "10109",
@@ -1421,6 +1482,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/startups/?incubateur=apigouv",
+							"method": "GET",
+							"param": "incubateur",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
 							"method": "GET",
 							"param": "incubateur",
@@ -1489,13 +1557,6 @@
 							"param": "incubateur",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=lab-mi",
-							"method": "GET",
-							"param": "incubateur",
-							"attack": "",
-							"evidence": ""
 						}
 					],
 					"count": "12",
@@ -1504,7 +1565,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1461"
+					"sourceid": "1235"
 				}
 			]
 		}
