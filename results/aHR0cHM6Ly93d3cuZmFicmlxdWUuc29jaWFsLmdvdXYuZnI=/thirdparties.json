@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "www.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1653792135,
+      "expires": 1654396233,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.2.6321",
-      "value": "e2128f304d473bc6.1653790336.",
+      "value": "f394a8e15717b76b.1654394433.",
       "domain": "www.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1687745536,
+      "expires": 1688349633,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -33,17 +33,17 @@
     }
   ],
   "headers": {
-    "date": "Sun, 29 May 2022 02:12:13 GMT",
-    "content-type": "text/html",
-    "last-modified": "Tue, 19 Apr 2022 15:16:30 GMT",
-    "vary": "Accept-Encoding",
-    "etag": "W/\"625ed24e-6f8b\"",
-    "x-frame-options": "deny",
-    "x-xss-protection": "1; mode=block",
-    "x-content-type-options": "nosniff",
     "content-encoding": "gzip",
+    "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; img-src 'self'; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
+    "content-type": "text/html",
+    "date": "Sun, 05 Jun 2022 02:00:31 GMT",
+    "etag": "W/\"625ed24e-6f8b\"",
+    "last-modified": "Tue, 19 Apr 2022 15:16:30 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
-    "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; img-src 'self'; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'"
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
