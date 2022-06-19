@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 12 Jun 2022 02:09:26",
+	"@generated": "Sun, 19 Jun 2022 02:08:49",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "283"
+					"sourceid": "281"
 				},
 				{
 					"pluginid": "10055",
