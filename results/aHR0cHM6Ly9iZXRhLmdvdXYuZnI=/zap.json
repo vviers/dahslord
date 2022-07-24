@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 17 Jul 2022 02:33:27",
+	"@generated": "Sun, 24 Jul 2022 02:38:03",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -281,7 +281,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/",
+							"uri": "https://beta.gouv.fr/startups/la-bonne-alternance.html",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -383,7 +383,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "1200"
+					"sourceid": "1202"
 				},
 				{
 					"pluginid": "10017",
@@ -472,7 +472,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1200"
+					"sourceid": "1202"
 				},
 				{
 					"pluginid": "10063",
@@ -888,7 +888,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "154"
+					"sourceid": "155"
 				},
 				{
 					"pluginid": "10021",
@@ -971,7 +971,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/",
+							"uri": "https://beta.gouv.fr/startups/la-bonne-alternance.html",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1156,28 +1156,28 @@
 							"evidence": "TODO"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=apigouv",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=anct",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=apigouv",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=anct",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "TODO"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=apigouv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=bercy",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=apigouv",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1190,7 +1190,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1103"
+					"sourceid": "1105"
 				},
 				{
 					"pluginid": "10109",
@@ -1369,7 +1369,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/",
+							"uri": "https://beta.gouv.fr/startups/la-bonne-alternance.html",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
