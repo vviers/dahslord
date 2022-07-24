@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 17 Jul 2022 02:13:49",
+	"@generated": "Sun, 24 Jul 2022 02:17:27",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "283"
+					"sourceid": "280"
 				},
 				{
 					"pluginid": "10055",
@@ -319,20 +319,6 @@
 							"evidence": "805306368"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "0123456789"
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2147483647"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/code-du-travail-numerique/",
 							"method": "GET",
 							"param": "",
@@ -347,13 +333,13 @@
 							"evidence": "20201014"
 						}
 					],
-					"count": "14",
+					"count": "12",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1073741823, which evaluates to: 2004-01-10 13:37:03</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "280"
+					"sourceid": "279"
 				},
 				{
 					"pluginid": "10094",
@@ -541,7 +527,7 @@
 					],
 					"count": "11",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"HRmF3wWbrElmLZ7T0l\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"Mt7mtrl2yEIgGcu6lx\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
