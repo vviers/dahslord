@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 18 Sep 2022 03:03:08",
+	"@generated": "Sun, 25 Sep 2022 02:47:45",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -383,7 +383,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1218"
+					"sourceid": "1219"
 				},
 				{
 					"pluginid": "10096",
@@ -436,15 +436,22 @@
 							"param": "",
 							"attack": "",
 							"evidence": "1636588800"
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/eva.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1585785600"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1538399033, which evaluates to: 2018-10-01 13:03:53</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "142"
+					"sourceid": "157"
 				},
 				{
 					"pluginid": "10021",
@@ -650,7 +657,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1118"
+					"sourceid": "1122"
 				},
 				{
 					"pluginid": "10015",
