@@ -1,41 +1,7 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 16 Oct 2022 02:57:08",
+	"@generated": "Sun, 23 Oct 2022 02:54:55",
 	"site":[ 
-		{
-			"@name": "https://beta-gouv-fr-budget.netlify.app",
-			"@host": "beta-gouv-fr-budget.netlify.app",
-			"@port": "443",
-			"@ssl": "true",
-			"alerts": [ 
-				{
-					"pluginid": "10050",
-					"alertRef": "10050",
-					"alert": "Retrieved from Cache",
-					"name": "Retrieved from Cache",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
-					"instances":[ 
-						{
-							"uri": "https://beta-gouv-fr-budget.netlify.app/?budget=800000&date=2022-07-13&start=2021-03-15&startup=Aides+Jeunes&startupId=aides.jeunes",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 1"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
-					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
-					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
-					"cweid": "-1",
-					"wascid": "-1",
-					"sourceid": "2316"
-				}
-			]
-		},
 		{
 			"@name": "https://beta.gouv.fr",
 			"@host": "beta.gouv.fr",
@@ -102,6 +68,13 @@
 							"evidence": "<form method=\"post\" target=\"_blank\" action=\"https://981c5932.sibforms.com/serve/MUIEAED7q5La6zVwcMrAI5cwJB2EZmeOZVHfadIeHA7u9YyGUb9FB0MqprJ1A4DbWnpORGiPSZA4yxdpLFnWbjSvsFFgYNTtd7A54LhPxK3Zg2jaB_qK-b5Sm6aZ2M6kV1nO2mpJW0KcFGIMb5KbirWUxg8CJsQJUp_AJ6ARN5PSdFNxQpzVAPXKMNs1Z7n9lgK9bMoL9fFVP_Wx\" id=\"newsletter\">"
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form method=\"post\" target=\"_blank\" action=\"https://981c5932.sibforms.com/serve/MUIEAED7q5La6zVwcMrAI5cwJB2EZmeOZVHfadIeHA7u9YyGUb9FB0MqprJ1A4DbWnpORGiPSZA4yxdpLFnWbjSvsFFgYNTtd7A54LhPxK3Zg2jaB_qK-b5Sm6aZ2M6kV1nO2mpJW0KcFGIMb5KbirWUxg8CJsQJUp_AJ6ARN5PSdFNxQpzVAPXKMNs1Z7n9lgK9bMoL9fFVP_Wx\" id=\"newsletter\">"
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
@@ -117,13 +90,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form method=\"post\" target=\"_blank\" action=\"https://981c5932.sibforms.com/serve/MUIEAED7q5La6zVwcMrAI5cwJB2EZmeOZVHfadIeHA7u9YyGUb9FB0MqprJ1A4DbWnpORGiPSZA4yxdpLFnWbjSvsFFgYNTtd7A54LhPxK3Zg2jaB_qK-b5Sm6aZ2M6kV1nO2mpJW0KcFGIMb5KbirWUxg8CJsQJUp_AJ6ARN5PSdFNxQpzVAPXKMNs1Z7n9lgK9bMoL9fFVP_Wx\" id=\"newsletter\">"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -198,6 +164,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
@@ -213,13 +186,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -301,6 +267,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -309,13 +282,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/recrutement/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -329,32 +295,6 @@
 					"cweid": "1021",
 					"wascid": "15",
 					"sourceid": "1"
-				},
-				{
-					"pluginid": "10099",
-					"alertRef": "10099",
-					"alert": "Source Code Disclosure - Perl",
-					"name": "Source Code Disclosure - Perl",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>Application Source Code was disclosed by the web server - Perl</p>",
-					"instances":[ 
-						{
-							"uri": "https://beta.gouv.fr/content/docs/rapportannuel.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "$#fGIEh"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
-					"otherinfo": "<p>$#fGIEh</p>",
-					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
-					"cweid": "540",
-					"wascid": "13",
-					"sourceid": "2341"
 				},
 				{
 					"pluginid": "90003",
@@ -443,7 +383,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "963"
+					"sourceid": "964"
 				},
 				{
 					"pluginid": "10017",
@@ -532,7 +472,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "963"
+					"sourceid": "964"
 				},
 				{
 					"pluginid": "10063",
@@ -594,6 +534,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
@@ -609,13 +556,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -765,6 +705,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -773,13 +720,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/recrutement/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -854,6 +794,13 @@
 							"evidence": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/profile_images/1226891323132841991/Z42OxI0v_400x400"
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
@@ -873,13 +820,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "com/serve/MUIEAED7q5La6zVwcMrAI5cwJB2EZmeOZVHfadIeHA7u9YyGUb9FB0MqprJ1A4DbWnpORGiPSZA4yxdpLFnWbjSvsFFgYNTtd7A54LhPxK3Zg2jaB_qK-b5Sm6aZ2M6kV1nO2mpJW0KcFGIMb5KbirWUxg8CJsQJUp_AJ6ARN5PSdFNxQpzVAPXKMNs1Z7n9lgK9bMoL9fFVP_Wx"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2Fle-rapport-des-1000-premiers-jours-une-commission-d-experts-a-l-appui"
 						}
 					],
 					"count": "11",
@@ -905,7 +845,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "DB"
+							"evidence": "admin"
 						},
 						{
 							"uri": "https://beta.gouv.fr/assets/additional/js/search-team.js",
@@ -978,14 +918,14 @@
 							"evidence": "TODO"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=anct",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=ademe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "select"
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=anct",
+							"uri": "https://beta.gouv.fr/startups/?incubateur=ademe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -994,7 +934,7 @@
 					],
 					"count": "13",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bDB\\b and was detected in the element starting with: \"<script></p><p>    var authorsteam = [</p><p>        </p><p>            { \"id\"        : \"/authors/matthieu.faugere\",</p><p>                \"fullname\": \"\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script></p><p>    var authorsteam = [</p><p>        </p><p>            { \"id\"        : \"/authors/maxine.sabater\",</p><p>                \"fullname\": \"Ma\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
@@ -1060,6 +1000,13 @@
 							"evidence": "<a class=\"fr-nav__link\" href=\"/approche\" target=\"_self\">D\u00E9couvrir le programme</a>"
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"fr-nav__link\" href=\"/approche\" target=\"_self\">D\u00E9couvrir le programme</a>"
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
@@ -1075,13 +1022,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"fr-nav__link\" href=\"/approche\" target=\"_self\">D\u00E9couvrir le programme</a>"
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1163,6 +1103,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1171,13 +1118,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/recrutement/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1252,6 +1192,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/annuaire",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
@@ -1267,13 +1214,6 @@
 						},
 						{
 							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1298,6 +1238,13 @@
 					"riskdesc": "Informational (Low)",
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
+						{
+							"uri": "https://beta.gouv.fr/startups/?incubateur=ademe",
+							"method": "GET",
+							"param": "incubateur",
+							"attack": "",
+							"evidence": ""
+						},
 						{
 							"uri": "https://beta.gouv.fr/startups/?incubateur=anct",
 							"method": "GET",
@@ -1374,22 +1321,15 @@
 							"param": "incubateur",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/?incubateur=lab-innov-anssi",
-							"method": "GET",
-							"param": "incubateur",
-							"attack": "",
-							"evidence": ""
 						}
 					],
 					"count": "12",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://beta.gouv.fr/startups/?incubateur=anct</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [section] tag [id] attribute </p><p></p><p>The user input found was:</p><p>incubateur=anct</p><p></p><p>The user-controlled value was:</p><p>anct</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://beta.gouv.fr/startups/?incubateur=ademe</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [section] tag [id] attribute </p><p></p><p>The user input found was:</p><p>incubateur=ademe</p><p></p><p>The user-controlled value was:</p><p>ademe</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1137"
+					"sourceid": "1140"
 				}
 			]
 		}
