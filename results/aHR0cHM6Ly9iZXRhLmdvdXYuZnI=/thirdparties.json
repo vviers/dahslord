@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1668912322,
+      "expires": 1669516622,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "1018c46b81f54a93.1668910522.",
+      "value": "36ffb4b016327d0a.1669514822.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1702865722,
+      "expires": 1703470022,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -35,11 +35,11 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 20 Nov 2022 02:15:21 GMT",
-    "etag": "W/\"6377c173-9442\"",
-    "last-modified": "Fri, 18 Nov 2022 17:31:31 GMT",
+    "date": "Sun, 27 Nov 2022 02:07:01 GMT",
+    "etag": "W/\"638232fd-9434\"",
+    "last-modified": "Sat, 26 Nov 2022 15:38:37 GMT",
     "strict-transport-security": "max-age=31536000",
-    "x-request-id": "112d9534-461a-444a-885d-97cc88fe50d4"
+    "x-request-id": "4c5f2b0d-78ea-4816-9621-8b68e635d87d"
   },
   "endpoints": [
     {
