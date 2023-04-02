@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 26 Mar 2023 01:39:15",
+	"@generated": "Sun, 2 Apr 2023 01:27:12",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -208,6 +208,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://www.fabrique.social.gouv.fr/members/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -230,13 +237,6 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/nata/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -339,14 +339,14 @@
 							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/nata/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -435,14 +435,14 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/nata/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -451,7 +451,7 @@
 					],
 					"count": "11",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"ZmK2jyIAN_UmyEzvxu\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"fdMnyYClPjIb2MPDFQ\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
@@ -531,14 +531,14 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/nata/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -688,6 +688,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://www.fabrique.social.gouv.fr/members/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -710,13 +717,6 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/nata/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
