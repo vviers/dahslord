@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 26 Mar 2023 01:53:41",
+	"@generated": "Sun, 2 Apr 2023 01:38:19",
 	"site":[ 
 		{
 			"@name": "https://beta-gouv-fr-budget.netlify.app",
@@ -9,6 +9,32 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
+				{
+					"pluginid": "90022",
+					"alertRef": "90022",
+					"alert": "Application Error Disclosure",
+					"name": "Application Error Disclosure",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
+					"instances":[ 
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/chunks/main-71a0feb107a7fd63.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Internal Server Error"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "2616"
+				},
 				{
 					"pluginid": "10050",
 					"alertRef": "10050",
@@ -25,15 +51,92 @@
 							"param": "",
 							"attack": "",
 							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/8YOaa5EQnaUHVv8BrN1sm/_buildManifest.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/8YOaa5EQnaUHVv8BrN1sm/_ssgManifest.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/chunks/framework-ae4f43955bfa5ddc.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/chunks/main-71a0feb107a7fd63.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/chunks/pages/_app-6e0f6f809c4ba91c.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/chunks/pages/index-899693e6db8ecb34.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/chunks/polyfills-0d1b80a048d4787e.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/chunks/webpack-34c76af51fb9f015.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/css/27d177a30947857b.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/_next/static/css/97d17c872f410c56.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://beta-gouv-fr-budget.netlify.app/favicon.ico",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
 						}
 					],
-					"count": "1",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "2329"
+					"sourceid": "2326"
 				}
 			]
 		},
@@ -130,7 +233,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10038",
@@ -226,7 +329,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10020",
@@ -238,13 +341,6 @@
 					"riskdesc": "Medium (Medium)",
 					"desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>",
 					"instances":[ 
-						{
-							"uri": "https://beta.gouv.fr",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
@@ -316,13 +412,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "56"
 				},
 				{
 					"pluginid": "10099",
@@ -348,7 +444,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2283"
+					"sourceid": "2297"
 				},
 				{
 					"pluginid": "90003",
@@ -451,7 +547,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "927"
+					"sourceid": "958"
 				},
 				{
 					"pluginid": "10017",
@@ -554,7 +650,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "927"
+					"sourceid": "958"
 				},
 				{
 					"pluginid": "10063",
@@ -676,7 +772,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1055"
+					"sourceid": "1054"
 				},
 				{
 					"pluginid": "10096",
@@ -744,7 +840,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1170"
+					"sourceid": "783"
 				},
 				{
 					"pluginid": "10021",
@@ -820,14 +916,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/mon-entreprise.html",
+							"uri": "https://beta.gouv.fr/recrutement/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/startups/pix.html",
+							"uri": "https://beta.gouv.fr/startups/mon-entreprise.html",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -936,7 +1032,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10027",
@@ -1046,7 +1142,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1789"
+					"sourceid": "1092"
 				},
 				{
 					"pluginid": "10109",
@@ -1204,6 +1300,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/communaute/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1223,13 +1326,6 @@
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/pix.html",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
 						}
 					],
 					"count": "11",
@@ -1238,7 +1334,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1335,6 +1431,46 @@
 					"cweid": "524",
 					"wascid": "13",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10031",
+					"alertRef": "10031",
+					"alert": "User Controllable HTML Element Attribute (Potential XSS)",
+					"name": "User Controllable HTML Element Attribute (Potential XSS)",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
+					"instances":[ 
+						{
+							"uri": "https://beta.gouv.fr/startups/?incubateur=ademe",
+							"method": "GET",
+							"param": "incubateur",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/?incubateur=mission-inserjeunes",
+							"method": "GET",
+							"param": "incubateur",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://beta.gouv.fr/startups/?incubateur=sgmas",
+							"method": "GET",
+							"param": "incubateur",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://beta.gouv.fr/startups/?incubateur=ademe</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [section] tag [id] attribute </p><p></p><p>The user input found was:</p><p>incubateur=ademe</p><p></p><p>The user-controlled value was:</p><p>ademe</p>",
+					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
+					"cweid": "20",
+					"wascid": "20",
+					"sourceid": "2593"
 				}
 			]
 		}
