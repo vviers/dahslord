@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 30 Apr 2023 01:29:41",
+	"@generated": "Sun, 7 May 2023 01:35:55",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -9,33 +9,6 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
-				{
-					"pluginid": "90022",
-					"alertRef": "90022",
-					"alert": "Application Error Disclosure",
-					"name": "Application Error Disclosure",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/_next/static/chunks/main-d5221eeca408094c7dbf.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Internal Server Error",
-							"otherinfo": ""
-						}
-					],
-					"count": "1",
-					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
-					"otherinfo": "",
-					"reference": "",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "293"
-				},
 				{
 					"pluginid": "10055",
 					"alertRef": "10055-4",
@@ -152,7 +125,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10003",
@@ -179,7 +152,7 @@
 					"reference": "<p>https://github.com/vercel/next.js/security/advisories/GHSA-fmvm-x8mv-47mj</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "293"
+					"sourceid": "294"
 				},
 				{
 					"pluginid": "10063",
@@ -248,7 +221,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -264,7 +237,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ozensemble/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -272,7 +245,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -286,11 +259,11 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
-					"alertRef": "10094",
+					"alertRef": "10094-3",
 					"alert": "Base64 Disclosure",
 					"name": "Base64 Disclosure",
 					"riskcode": "0",
@@ -355,14 +328,6 @@
 							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
-							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
@@ -380,6 +345,14 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
+							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -462,14 +435,6 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/404\",\"query\":{},\"buildId\":\"X3Yazi58QiEane2\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/bpco\",\"query\":{},\"buildId\":\"X3Yaz\", see evidence field for the suspicious comment/snippet."
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
@@ -492,6 +457,14 @@
 							"attack": "",
 							"evidence": "query",
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/ressourcerie\",\"query\":{},\"buildId\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/reva\",\"query\":{},\"buildId\":\"X3Yaz\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "11",
@@ -569,14 +542,6 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>",
-							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
@@ -599,6 +564,14 @@
 							"attack": "",
 							"evidence": "<noscript data-n-css=\"\"></noscript>",
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						}
 					],
 					"count": "11",
@@ -607,7 +580,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -660,6 +633,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/1000jours/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -684,23 +665,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ops/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ozensemble/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -783,14 +756,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
@@ -807,7 +772,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ozensemble/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -815,7 +780,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -823,13 +788,13 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}
