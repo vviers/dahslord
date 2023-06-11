@@ -3,10 +3,10 @@
   "cookies": [
     {
       "name": "_pk_id.1.968e",
-      "value": "9fea2911821ee599.1685844842.",
+      "value": "5930dc31a1a07dd8.1686449469.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1719800042,
+      "expires": 1720404669,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -21,7 +21,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1685846642,
+      "expires": 1686451269,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -36,7 +36,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1685846642,
+      "expires": 1686451269,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -48,10 +48,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "41a2f3f922db6b15.1685844842.",
+      "value": "0c8040ecc245acdd.1686449469.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1719800042,
+      "expires": 1720404669,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -65,17 +65,25 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 04 Jun 2023 02:14:01 GMT",
-    "etag": "W/\"647a02a9-972a\"",
-    "last-modified": "Fri, 02 Jun 2023 14:54:33 GMT",
+    "date": "Sun, 11 Jun 2023 02:11:08 GMT",
+    "etag": "W/\"6483977f-972a\"",
+    "last-modified": "Fri, 09 Jun 2023 21:19:59 GMT",
     "strict-transport-security": "max-age=31536000",
-    "x-request-id": "7065d16b-4458-4326-a457-ec011d5211c1"
+    "x-request-id": "683aceca-86b6-4efd-8869-91c20c79fdb2"
   },
   "endpoints": [
     {
       "hostname": "beta.gouv.fr",
       "ip": "5.104.101.30",
       "geoip": {
+        "city": {
+          "geoname_id": 6615524,
+          "names": {
+            "en": "Saint-Martin-de-Gurson",
+            "ru": "Сен-Мартен-де-Гюрсон",
+            "zh-CN": "圣马丹德居尔松"
+          }
+        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -107,9 +115,12 @@
         },
         "location": {
           "accuracy_radius": 500,
-          "latitude": 48.8582,
-          "longitude": 2.3387,
+          "latitude": 44.9558,
+          "longitude": 0.1102,
           "time_zone": "Europe/Paris"
+        },
+        "postal": {
+          "code": "24610"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -125,7 +136,28 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 11071620,
+            "iso_code": "NAQ",
+            "names": {
+              "en": "Nouvelle-Aquitaine",
+              "fr": "Nouvelle-Aquitaine"
+            }
+          },
+          {
+            "geoname_id": 3021042,
+            "iso_code": "24",
+            "names": {
+              "de": "Dordogne",
+              "en": "Dordogne",
+              "es": "Dordoña",
+              "fr": "Dordogne",
+              "pt-BR": "Dordonha"
+            }
+          }
+        ]
       }
     }
   ]
