@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
-	"@version": "2.12.0",
-	"@generated": "Sun, 9 Jul 2023 02:17:30",
+	"@version": "2.13.0",
+	"@generated": "Sun, 16 Jul 2023 02:15:59",
 	"site":[ 
 		{
 			"@name": "https://beta-gouv-fr-budget.netlify.app",
@@ -24,7 +24,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0",
+							"evidence": "Age: 2",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -40,7 +40,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 181",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -56,7 +56,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 180",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -64,7 +64,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 180",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -88,7 +88,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 180",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -229,7 +229,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10038",
@@ -351,7 +351,7 @@
 						{
 							"uri": "https://beta.gouv.fr",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -359,7 +359,7 @@
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -367,7 +367,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -375,7 +375,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -383,7 +383,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/fast",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -391,7 +391,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -399,7 +399,7 @@
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -407,7 +407,7 @@
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -415,7 +415,7 @@
 						{
 							"uri": "https://beta.gouv.fr/fast/",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -423,7 +423,7 @@
 						{
 							"uri": "https://beta.gouv.fr/manifeste",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -431,7 +431,7 @@
 						{
 							"uri": "https://beta.gouv.fr/recrutement/",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -443,7 +443,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10099",
@@ -470,7 +470,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2321"
+					"sourceid": "2260"
 				},
 				{
 					"pluginid": "90003",
@@ -585,7 +585,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "956"
+					"sourceid": "923"
 				},
 				{
 					"pluginid": "10017",
@@ -700,7 +700,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "956"
+					"sourceid": "923"
 				},
 				{
 					"pluginid": "10063",
@@ -882,7 +882,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "767"
+					"sourceid": "768"
 				},
 				{
 					"pluginid": "10021",
@@ -897,7 +897,7 @@
 						{
 							"uri": "https://beta.gouv.fr",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -905,7 +905,7 @@
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -913,7 +913,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -921,7 +921,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -929,7 +929,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/fast",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -937,7 +937,15 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://beta.gouv.fr/communaute/",
+							"method": "GET",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -945,7 +953,7 @@
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -953,7 +961,7 @@
 						{
 							"uri": "https://beta.gouv.fr/fast/",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -961,7 +969,7 @@
 						{
 							"uri": "https://beta.gouv.fr/manifeste",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -969,15 +977,7 @@
 						{
 							"uri": "https://beta.gouv.fr/recrutement/",
 							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/mon-entreprise.html",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
+							"param": "x-content-type-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
@@ -989,7 +989,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10094",
@@ -1096,7 +1096,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10027",
@@ -1154,7 +1154,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2023-07-07';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2023-07-13';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
@@ -1162,7 +1162,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2023-07-07';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2023-07-13';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
@@ -1219,7 +1219,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1084"
+					"sourceid": "1098"
 				},
 				{
 					"pluginid": "10109",
@@ -1326,7 +1326,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -1341,7 +1341,7 @@
 						{
 							"uri": "https://beta.gouv.fr",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1349,7 +1349,7 @@
 						{
 							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1357,7 +1357,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1365,7 +1365,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/construction",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1373,7 +1373,7 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/fast",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1381,7 +1381,15 @@
 						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://beta.gouv.fr/communaute/",
+							"method": "GET",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1389,7 +1397,7 @@
 						{
 							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1397,7 +1405,7 @@
 						{
 							"uri": "https://beta.gouv.fr/fast/",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1405,7 +1413,7 @@
 						{
 							"uri": "https://beta.gouv.fr/manifeste",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1413,15 +1421,7 @@
 						{
 							"uri": "https://beta.gouv.fr/recrutement/",
 							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/startups/mon-entreprise.html",
-							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -1433,7 +1433,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -1583,7 +1583,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2581"
+					"sourceid": "2578"
 				}
 			]
 		}
