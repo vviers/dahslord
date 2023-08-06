@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 30 Jul 2023 01:25:03",
+	"@generated": "Sun, 6 Aug 2023 01:17:31",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -66,7 +66,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -125,7 +125,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10003",
@@ -221,7 +221,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -328,6 +328,14 @@
 							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
 						},
 						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
+							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
+						},
+						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
@@ -345,14 +353,6 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
-							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -384,7 +384,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"FKfvl0klUlDvm078L8\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"A9xtKefIV46km8ZNhN\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/",
@@ -392,7 +392,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"FKfvl0klUlDvm078L8\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"A9xtKefIV46km8ZNhN\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/actus/",
@@ -400,7 +400,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/actus\",\"query\":{},\"buildId\":\"FKfvl0klUlDvm\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/actus\",\"query\":{},\"buildId\":\"A9xtKefIV46km\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
@@ -408,7 +408,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/idees\",\"query\":{},\"buildId\":\"FKfvl0klUlDvm\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/idees\",\"query\":{},\"buildId\":\"A9xtKefIV46km\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/members/",
@@ -416,7 +416,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"members\":[{\"id\":\"aurelie.rolland\",\"name\":\"Aur\u00E9lie Rol\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"members\":[{\"id\":\"armand.giraud\",\"name\":\"Armand Giraud\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
@@ -424,7 +424,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/404\",\"query\":{},\"buildId\":\"FKfvl0klUlDvm07\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/404\",\"query\":{},\"buildId\":\"A9xtKefIV46km8Z\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
@@ -432,7 +432,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/404\",\"query\":{},\"buildId\":\"FKfvl0klUlDvm07\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/404\",\"query\":{},\"buildId\":\"A9xtKefIV46km8Z\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/bpco\",\"query\":{},\"buildId\":\"A9xtK\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
@@ -448,7 +456,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/nata\",\"query\":{},\"buildId\":\"FKfvl\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/nata\",\"query\":{},\"buildId\":\"A9xtK\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
@@ -457,23 +465,15 @@
 							"attack": "",
 							"evidence": "query",
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/ressourcerie\",\"query\":{},\"buildId\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/reva\",\"query\":{},\"buildId\":\"FKfvl\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "11",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"FKfvl0klUlDvm078L8\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/\",\"query\":{},\"buildId\":\"A9xtKefIV46km8ZNhN\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10109",
@@ -542,7 +542,7 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -633,14 +633,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/1000jours/",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
 							"method": "GET",
 							"param": "cache-control",
@@ -658,6 +650,14 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/nata/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/ops/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -687,7 +687,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -708,7 +708,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -722,7 +722,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -743,7 +743,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -757,7 +757,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -778,7 +778,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -792,7 +792,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -813,7 +813,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -827,7 +827,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -896,7 +896,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
+							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
