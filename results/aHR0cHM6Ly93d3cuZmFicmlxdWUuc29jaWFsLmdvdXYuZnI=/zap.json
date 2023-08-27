@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 20 Aug 2023 01:13:04",
+	"@generated": "Sun, 27 Aug 2023 01:15:51",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -66,7 +66,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -125,7 +125,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10003",
@@ -152,7 +152,7 @@
 					"reference": "<p>https://github.com/vercel/next.js/security/advisories/GHSA-fmvm-x8mv-47mj</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "295"
+					"sourceid": "294"
 				},
 				{
 					"pluginid": "10063",
@@ -221,14 +221,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
@@ -246,6 +238,14 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -328,14 +328,6 @@
 							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
-							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
@@ -358,6 +350,14 @@
 							"attack": "",
 							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
 							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
+							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
 						}
 					],
 					"count": "11",
@@ -366,7 +366,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10027",
@@ -473,7 +473,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10109",
@@ -580,7 +580,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -633,6 +633,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/1000jours/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
 							"method": "GET",
 							"param": "cache-control",
@@ -650,14 +658,6 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/nata/",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/ops/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -708,7 +708,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -722,7 +722,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -743,7 +743,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -757,7 +757,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -778,7 +778,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -792,7 +792,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -813,7 +813,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -827,7 +827,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -896,14 +896,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/startups/bpco/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/enfantsduspectacle/",
 							"method": "GET",
 							"param": "",
@@ -926,6 +918,14 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
 					"count": "11",
@@ -934,7 +934,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				}
 			]
 		}
