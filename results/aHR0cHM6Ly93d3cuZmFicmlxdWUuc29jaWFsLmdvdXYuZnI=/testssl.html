@@ -21,13 +21,13 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az402-180:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az341-72:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-08-27 01:16:52                --&gt;&gt; 20.74.14.77:443 (www.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-09-03 01:17:17                --&gt;&gt; 37.59.19.63:443 (www.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
- rDNS (20.74.14.77):     --
+ rDNS (37.59.19.63):     ns3083596.ip-37-59-19.eu.
  Service detected:       HTTP
 
 
@@ -89,7 +89,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;extended master secret/#23&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>no -- no lifetime advertised
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: no
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets no, ID: yes
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>none
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -97,15 +97,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>032C707DB6F28ACB14AB2F27A2314EF55372 (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 EEE0AD4A52095992DC3FEC9DB1C634770E8BC428
-                              SHA256 98E9AFF897DC75031799D44D0533750F6B05DBC7A5B60AC4AA1147432307817A
+<span style="font-weight:bold;"> Serial                       </span>040D85F02B62D3E8AF188EA99CFAFC94964E (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 0430251B6AFD4058B9BCB390153D0729B8FEB4BD
+                              SHA256 C30446ADD42D70E235BDBADBDA579C9179F2016598A9BD3314ACB19B1A4453CC
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>www.fabrique.social.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>www.fabrique.social.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">74 &gt;= 30 days</span> (2023-08-11 22:28 --&gt; 2023-11-09 22:28)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">87 &gt;= 30 days</span> (2023-08-31 19:02 --&gt; 2023-11-29 19:02)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -123,7 +123,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">182 days</span>=15724800 s<span style="color:#008817;">, includeSubDomains</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -159,7 +159,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=98E9AFF897DC75031799D44D0533750F6B05DBC7A5B60AC4AA1147432307817A" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=98E9AFF897DC75031799D44D0533750F6B05DBC7A5B60AC4AA1147432307817A</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=C30446ADD42D70E235BDBADBDA579C9179F2016598A9BD3314ACB19B1A4453CC" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=C30446ADD42D70E235BDBADBDA579C9179F2016598A9BD3314ACB19B1A4453CC</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -218,7 +218,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-08-27 01:18:26 [  96s] --&gt;&gt; 20.74.14.77:443 (www.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-09-03 01:19:00 [ 106s] --&gt;&gt; 37.59.19.63:443 (www.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
