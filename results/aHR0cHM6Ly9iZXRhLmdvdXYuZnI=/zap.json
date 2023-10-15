@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
-	"@version": "2.13.0",
-	"@generated": "Sun, 8 Oct 2023 01:32:23",
+	"@version": "2.14.0",
+	"@generated": "Sun, 15 Oct 2023 00:34:24",
 	"site":[ 
 		{
 			"@name": "https://beta-gouv-fr-budget.netlify.app",
@@ -32,7 +32,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1524",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -40,7 +40,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1524",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -56,7 +56,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1524",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -72,7 +72,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0",
+							"evidence": "Age: 1",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -80,7 +80,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1524",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -88,7 +88,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1524",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -122,7 +122,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "2554"
+					"sourceid": "2567"
 				}
 			]
 		},
@@ -226,7 +226,7 @@
 					"count": "10",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"search\" ].</p>",
-					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
+					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
 					"sourceid": "1"
@@ -470,7 +470,7 @@
 					"reference": "<p>https://www.wsj.com/articles/BL-CIOB-2999</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2280"
+					"sourceid": "2337"
 				},
 				{
 					"pluginid": "90003",
@@ -585,7 +585,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "941"
+					"sourceid": "886"
 				},
 				{
 					"pluginid": "10017",
@@ -700,7 +700,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "941"
+					"sourceid": "886"
 				},
 				{
 					"pluginid": "10063",
@@ -882,7 +882,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "717"
+					"sourceid": "775"
 				},
 				{
 					"pluginid": "10021",
@@ -1096,7 +1096,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10027",
@@ -1154,7 +1154,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2023-10-06';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2023-10-13';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
@@ -1162,7 +1162,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2023-10-06';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2023-10-13';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
@@ -1219,7 +1219,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1036"
+					"sourceid": "1615"
 				},
 				{
 					"pluginid": "10109",
@@ -1326,7 +1326,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -1460,17 +1460,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -1503,17 +1495,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -1546,23 +1530,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1589,17 +1565,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -1755,7 +1723,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2603"
+					"sourceid": "2606"
 				}
 			]
 		}
