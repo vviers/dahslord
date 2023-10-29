@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 22 Oct 2023 00:23:33",
+	"@generated": "Sun, 29 Oct 2023 00:23:44",
 	"site":[ 
 		{
 			"@name": "https://www.fabrique.social.gouv.fr",
@@ -36,7 +36,7 @@
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nframe-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -79,7 +79,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -93,7 +93,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10003",
@@ -149,7 +149,7 @@
 							"otherinfo": "Warnings:\nThe prefetch-src directive is deprecated\n"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -208,14 +208,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/members/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -262,6 +254,14 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "11",
@@ -270,7 +270,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -315,14 +315,6 @@
 							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/members/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
-							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -369,6 +361,14 @@
 							"attack": "",
 							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
 							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Header__NavbarTitleContainer-sc-c0bqvw-1",
+							"otherinfo": "\\x001d\uFFFDz\uFFFD\uFFFD5\uFFFD\uFFFDj\uFFFD\uFFFDW\uFFFD\uFFFD{Z\uFFFDw\uFFFD\uFFFD\uFFFD>sF\uFFFD\\x000f\uFFFD"
 						}
 					],
 					"count": "11",
@@ -377,7 +377,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10027",
@@ -420,14 +420,6 @@
 							"attack": "",
 							"evidence": "query",
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/idees\",\"query\":{},\"buildId\":\"cvqVpeWvfpjAR\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/members/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"members\":[{\"id\":\"jean-rene.duscher\",\"name\":\"Jean-Ren\u00E9\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
@@ -476,6 +468,14 @@
 							"attack": "",
 							"evidence": "query",
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/ressourcerie\",\"query\":{},\"buildId\", see evidence field for the suspicious comment/snippet."
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{}},\"page\":\"/startups/reva\",\"query\":{},\"buildId\":\"cvqVp\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "11",
@@ -529,14 +529,6 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/members/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>",
-							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
-						},
-						{
 							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -578,6 +570,14 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -690,9 +690,17 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
@@ -719,7 +727,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -733,7 +741,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -754,7 +762,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -789,7 +797,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -824,7 +832,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://www.fabrique.social.gouv.fr/sitemap.xml",
+							"uri": "https://www.fabrique.social.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -838,7 +846,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
@@ -876,14 +884,6 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/idees/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://www.fabrique.social.gouv.fr/members/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -932,6 +932,14 @@
 						},
 						{
 							"uri": "https://www.fabrique.social.gouv.fr/startups/ressourcerie/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://www.fabrique.social.gouv.fr/startups/reva/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
