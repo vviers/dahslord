@@ -206,7 +206,7 @@
               "ip"           : "www.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -346,7 +346,7 @@
               "ip"           : "www.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "70 >= 30 days"
+              "finding"      : "63 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "www.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1700353520"
+              "finding"      : "1700958326"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1133,6 +1133,6 @@
               "ip"           : "www.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "54"
+              "finding"      : "55"
           }
 ]
