@@ -3,10 +3,10 @@
   "cookies": [
     {
       "name": "_pk_id.1.968e",
-      "value": "3596ee9ce12bb998.1701563937.",
+      "value": "8101d51cbd556c5d.1702168684.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1735519137,
+      "expires": 1736123884,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -21,7 +21,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1701565736,
+      "expires": 1702170484,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -36,7 +36,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1701565736,
+      "expires": 1702170484,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -48,10 +48,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "c07abbfc4e8032e8.1701563937.",
+      "value": "1219dc84385b5170.1702168684.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1735519137,
+      "expires": 1736123884,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -65,26 +65,17 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 03 Dec 2023 00:38:56 GMT",
-    "etag": "W/\"656b4600-9ae9\"",
-    "last-modified": "Sat, 02 Dec 2023 14:58:08 GMT",
+    "date": "Sun, 10 Dec 2023 00:38:03 GMT",
+    "etag": "W/\"6574aa51-9afb\"",
+    "last-modified": "Sat, 09 Dec 2023 17:56:33 GMT",
     "strict-transport-security": "max-age=31536000",
-    "x-request-id": "66718a9b-e8f6-481f-bf82-ed20db3d05bb"
+    "x-request-id": "6a7a9b2d-ac7a-4bbc-ba3a-dba6a49a13c4"
   },
   "endpoints": [
     {
       "hostname": "beta.gouv.fr",
-      "ip": "5.104.101.30",
+      "ip": "109.232.236.90",
       "geoip": {
-        "city": {
-          "geoname_id": 3034797,
-          "names": {
-            "de": "Bartenheim",
-            "en": "Bartenheim",
-            "fr": "Bartenheim",
-            "pt-BR": "Bartenheim"
-          }
-        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -116,12 +107,9 @@
         },
         "location": {
           "accuracy_radius": 500,
-          "latitude": 47.6376,
-          "longitude": 7.4798,
+          "latitude": 48.8582,
+          "longitude": 2.3387,
           "time_zone": "Europe/Paris"
-        },
-        "postal": {
-          "code": "68870"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -137,28 +125,7 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 11071622,
-            "iso_code": "GES",
-            "names": {
-              "en": "Grand Est",
-              "fr": "Grand Est"
-            }
-          },
-          {
-            "geoname_id": 3013663,
-            "iso_code": "68",
-            "names": {
-              "de": "Haut-Rhin",
-              "en": "Haut-Rhin",
-              "es": "Alto Rin",
-              "fr": "Haut-Rhin",
-              "pt-BR": "Alto Reno"
-            }
-          }
-        ]
+        }
       }
     }
   ]
