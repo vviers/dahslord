@@ -199,7 +199,7 @@
               "ip"           : "beta.gouv.fr/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -346,7 +346,7 @@
               "ip"           : "beta.gouv.fr/5.104.101.30",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "85 >= 30 days"
+              "finding"      : "78 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -500,14 +500,14 @@
               "ip"           : "beta.gouv.fr/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "beta.gouv.fr/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1711240636"
+              "finding"      : "1711845456"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1412,7 +1412,7 @@
               "ip"           : "beta.gouv.fr/109.232.236.90",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "85 >= 30 days"
+              "finding"      : "78 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1573,7 +1573,7 @@
               "ip"           : "beta.gouv.fr/109.232.236.90",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1711240731"
+              "finding"      : "1711845550"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2136,6 +2136,6 @@
               "ip"           : "beta.gouv.fr/109.232.236.90",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "194"
+              "finding"      : "189"
           }
 ]

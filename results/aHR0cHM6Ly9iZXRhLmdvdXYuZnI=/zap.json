@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 24 Mar 2024 00:35:36",
+	"@generated": "Sun, 31 Mar 2024 00:35:56",
 	"site":[ 
 		{
 			"@name": "https://beta.gouv.fr",
@@ -52,7 +52,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 2: \"\" ]."
 						},
 						{
-							"uri": "https://beta.gouv.fr/approche",
+							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -60,7 +60,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"search\" ]."
 						},
 						{
-							"uri": "https://beta.gouv.fr/approche",
+							"uri": "https://beta.gouv.fr/devenir-intrapreneur",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -106,7 +106,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10038",
@@ -143,7 +143,23 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/approche/construction",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/approche/fast",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -159,14 +175,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/eig/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://beta.gouv.fr/fast/",
 							"method": "GET",
 							"param": "",
@@ -175,15 +183,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/manifeste",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/realisations/",
+							"uri": "https://beta.gouv.fr/incubateurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -213,7 +213,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "58"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10020",
@@ -298,7 +298,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/manifeste",
+							"uri": "https://beta.gouv.fr/incubateurs/",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -320,7 +320,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90003",
@@ -435,7 +435,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "962"
+					"sourceid": "853"
 				},
 				{
 					"pluginid": "10017",
@@ -550,7 +550,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "962"
+					"sourceid": "853"
 				},
 				{
 					"pluginid": "10063",
@@ -587,7 +587,23 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://beta.gouv.fr/approche/construction",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://beta.gouv.fr/approche/fast",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -603,14 +619,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/eig/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://beta.gouv.fr/fast/",
 							"method": "GET",
 							"param": "",
@@ -619,15 +627,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/manifeste",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://beta.gouv.fr/realisations/",
+							"uri": "https://beta.gouv.fr/incubateurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -657,7 +657,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "58"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10096",
@@ -740,7 +740,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "746"
+					"sourceid": "786"
 				},
 				{
 					"pluginid": "10021",
@@ -825,7 +825,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://beta.gouv.fr/manifeste",
+							"uri": "https://beta.gouv.fr/incubateurs/",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -847,7 +847,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "58"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -884,6 +884,14 @@
 							"otherinfo": "r\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\\x0014 @\\x0004\\x000f\uFFFD\uFFFD-\uFFFD\uFFFDW\\x0007\\x000c\uFFFD\\x00029s\\x0002A\uFFFDFfx\uFFFDU\\x001d\uFFFD\uFFFD!\uFFFD\uFFFD\uFFFD\uFFFDX\uFFFDe\\x001b\uFFFDPt2\uFFFDk'P8\r\uFFFD\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFDv\uFFFD\u015Df\uFFFDJ\uFFFD\\x0005\\x0016\\x0006\rN\uFFFD{\\x0003\uFFFD\\x000b\uFFFD\uFFFDJ\u07586\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDi\uFFFD\uFFFD\uFFFDEu\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDF \uFFFD\uFFFD)\uFFFD\uFFFDYL`\uFFFD\"l@\uFFFD)\uFFFD\\x0002z\\x0001\\x0013y='E7\\x0014)\uFFFDP\\x000f\\\uFFFD\r\uFFFDV{\uFFFD\uFFFD`+\uFFFD\u0320\uFFFD_\\x0015S\uFFFD["
 						},
 						{
+							"uri": "https://beta.gouv.fr/approche/construction",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/serve/MUIEAED7q5La6zVwcMrAI5cwJB2EZmeOZVHfadIeHA7u9YyGUb9FB0MqprJ1A4DbWnpORGiPSZA4yxdpLFnWbjSvsFFgYNTtd7A54LhPxK3Zg2jaB_qK-b5Sm6aZ2M6kV1nO2mpJW0KcFGIMb5KbirWUxg8CJsQJUp_AJ6ARN5PSdFNxQpzVAPXKMNs1Z7n9lgK9bMoL9fFVP_Wx",
+							"otherinfo": "r\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\\x0014 @\\x0004\\x000f\uFFFD\uFFFD-\uFFFD\uFFFDW\\x0007\\x000c\uFFFD\\x00029s\\x0002A\uFFFDFfx\uFFFDU\\x001d\uFFFD\uFFFD!\uFFFD\uFFFD\uFFFD\uFFFDX\uFFFDe\\x001b\uFFFDPt2\uFFFDk'P8\r\uFFFD\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFDv\uFFFD\u015Df\uFFFDJ\uFFFD\\x0005\\x0016\\x0006\rN\uFFFD{\\x0003\uFFFD\\x000b\uFFFD\uFFFDJ\u07586\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDi\uFFFD\uFFFD\uFFFDEu\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDF \uFFFD\uFFFD)\uFFFD\uFFFDYL`\uFFFD\"l@\uFFFD)\uFFFD\\x0002z\\x0001\\x0013y='E7\\x0014)\uFFFDP\\x000f\\\uFFFD\r\uFFFDV{\uFFFD\uFFFD`+\uFFFD\u0320\uFFFD_\\x0015S\uFFFD["
+						},
+						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
@@ -900,14 +908,6 @@
 							"otherinfo": "GIF89a\\x0001\\x0000\\x0001\\x0000\uFFFD\\x0000\\x0000\\x0000\\x0000\\x0000\uFFFD\uFFFD\uFFFD!\uFFFD\\x0004\\x0001\\x0000\\x0000\\x0000\\x0000,\\x0000\\x0000\\x0000\\x0000\\x0001\\x0000\\x0001\\x0000\\x0000\\x0002\\x0001D\\x0000;"
 						},
 						{
-							"uri": "https://beta.gouv.fr/eig/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/serve/MUIEAED7q5La6zVwcMrAI5cwJB2EZmeOZVHfadIeHA7u9YyGUb9FB0MqprJ1A4DbWnpORGiPSZA4yxdpLFnWbjSvsFFgYNTtd7A54LhPxK3Zg2jaB_qK-b5Sm6aZ2M6kV1nO2mpJW0KcFGIMb5KbirWUxg8CJsQJUp_AJ6ARN5PSdFNxQpzVAPXKMNs1Z7n9lgK9bMoL9fFVP_Wx",
-							"otherinfo": "r\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\\x0014 @\\x0004\\x000f\uFFFD\uFFFD-\uFFFD\uFFFDW\\x0007\\x000c\uFFFD\\x00029s\\x0002A\uFFFDFfx\uFFFDU\\x001d\uFFFD\uFFFD!\uFFFD\uFFFD\uFFFD\uFFFDX\uFFFDe\\x001b\uFFFDPt2\uFFFDk'P8\r\uFFFD\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFDv\uFFFD\u015Df\uFFFDJ\uFFFD\\x0005\\x0016\\x0006\rN\uFFFD{\\x0003\uFFFD\\x000b\uFFFD\uFFFDJ\u07586\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDi\uFFFD\uFFFD\uFFFDEu\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDF \uFFFD\uFFFD)\uFFFD\uFFFDYL`\uFFFD\"l@\uFFFD)\uFFFD\\x0002z\\x0001\\x0013y='E7\\x0014)\uFFFDP\\x000f\\\uFFFD\r\uFFFDV{\uFFFD\uFFFD`+\uFFFD\u0320\uFFFD_\\x0015S\uFFFD["
-						},
-						{
 							"uri": "https://beta.gouv.fr/fast/",
 							"method": "GET",
 							"param": "",
@@ -916,12 +916,12 @@
 							"otherinfo": "r\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\\x0014 @\\x0004\\x000f\uFFFD\uFFFD-\uFFFD\uFFFDW\\x0007\\x000c\uFFFD\\x00029s\\x0002A\uFFFDFfx\uFFFDU\\x001d\uFFFD\uFFFD!\uFFFD\uFFFD\uFFFD\uFFFDX\uFFFDe\\x001b\uFFFDPt2\uFFFDk'P8\r\uFFFD\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFDv\uFFFD\u015Df\uFFFDJ\uFFFD\\x0005\\x0016\\x0006\rN\uFFFD{\\x0003\uFFFD\\x000b\uFFFD\uFFFDJ\u07586\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDi\uFFFD\uFFFD\uFFFDEu\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDF \uFFFD\uFFFD)\uFFFD\uFFFDYL`\uFFFD\"l@\uFFFD)\uFFFD\\x0002z\\x0001\\x0013y='E7\\x0014)\uFFFDP\\x000f\\\uFFFD\r\uFFFDV{\uFFFD\uFFFD`+\uFFFD\u0320\uFFFD_\\x0015S\uFFFD["
 						},
 						{
-							"uri": "https://beta.gouv.fr/manifeste",
+							"uri": "https://beta.gouv.fr/incubateurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "com/serve/MUIEAED7q5La6zVwcMrAI5cwJB2EZmeOZVHfadIeHA7u9YyGUb9FB0MqprJ1A4DbWnpORGiPSZA4yxdpLFnWbjSvsFFgYNTtd7A54LhPxK3Zg2jaB_qK-b5Sm6aZ2M6kV1nO2mpJW0KcFGIMb5KbirWUxg8CJsQJUp_AJ6ARN5PSdFNxQpzVAPXKMNs1Z7n9lgK9bMoL9fFVP_Wx",
-							"otherinfo": "r\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD{\uFFFD\\x0014 @\\x0004\\x000f\uFFFD\uFFFD-\uFFFD\uFFFDW\\x0007\\x000c\uFFFD\\x00029s\\x0002A\uFFFDFfx\uFFFDU\\x001d\uFFFD\uFFFD!\uFFFD\uFFFD\uFFFD\uFFFDX\uFFFDe\\x001b\uFFFDPt2\uFFFDk'P8\r\uFFFD\uFFFD\uFFFD\uFFFDF\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFDv\uFFFD\u015Df\uFFFDJ\uFFFD\\x0005\\x0016\\x0006\rN\uFFFD{\\x0003\uFFFD\\x000b\uFFFD\uFFFDJ\u07586\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDi\uFFFD\uFFFD\uFFFDEu\uFFFD\uFFFD\uFFFD\uFFFD)\uFFFDF \uFFFD\uFFFD)\uFFFD\uFFFDYL`\uFFFD\"l@\uFFFD)\uFFFD\\x0002z\\x0001\\x0013y='E7\\x0014)\uFFFDP\\x000f\\\uFFFD\r\uFFFDV{\uFFFD\uFFFD`+\uFFFD\u0320\uFFFD_\\x0015S\uFFFD["
+							"evidence": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+							"otherinfo": "GIF89a\\x0001\\x0000\\x0001\\x0000\uFFFD\\x0000\\x0000\\x0000\\x0000\\x0000\uFFFD\uFFFD\uFFFD!\uFFFD\\x0004\\x0001\\x0000\\x0000\\x0000\\x0000,\\x0000\\x0000\\x0000\\x0000\\x0001\\x0000\\x0001\\x0000\\x0000\\x0002\\x0001D\\x0000;"
 						},
 						{
 							"uri": "https://beta.gouv.fr/realisations/",
@@ -954,7 +954,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10027",
@@ -988,7 +988,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2024-03-23';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2024-03-30';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/",
@@ -996,7 +996,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "admin",
-							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2024-03-23';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script type=\"text/javascript\">\n(function() {\n    window.buildDate = '2024-03-30';\n    window.data = {\"employer\":{\"admin\":[{\"dat\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://beta.gouv.fr/communaute/annuaire",
@@ -1004,7 +1004,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "bug",
-							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"<script>\n    var members = [\n        \n            { \"id\"        : \"/authors/manon.pavie\",\n                \"fullname\": \"Manon Pav\", see evidence field for the suspicious comment/snippet."
+							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"<script>\n    var members = [\n        \n            { \"id\"        : \"/authors/sebastien.primout\",\n                \"fullname\": \"Seb\", see evidence field for the suspicious comment/snippet."
 						},
 						{
 							"uri": "https://beta.gouv.fr/recherche?q",
@@ -1069,7 +1069,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "744"
+					"sourceid": "818"
 				},
 				{
 					"pluginid": "10109",
@@ -1106,6 +1106,14 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
+							"uri": "https://beta.gouv.fr/approche/construction",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"fr-nav__link\" href=\"/approche\" target=\"_self\">D\u00E9couvrir le programme</a>",
+							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
+						},
+						{
 							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
@@ -1122,14 +1130,6 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"uri": "https://beta.gouv.fr/eig/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"fr-nav__link\" href=\"/approche\" target=\"_self\">D\u00E9couvrir le programme</a>",
-							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
-						},
-						{
 							"uri": "https://beta.gouv.fr/fast/",
 							"method": "GET",
 							"param": "",
@@ -1138,7 +1138,7 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"uri": "https://beta.gouv.fr/manifeste",
+							"uri": "https://beta.gouv.fr/incubateurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1176,7 +1176,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "58"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -1261,7 +1261,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/manifeste",
+							"uri": "https://beta.gouv.fr/incubateurs/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1283,7 +1283,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -1304,7 +1304,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/robots.txt",
+							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1312,7 +1312,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
+							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1326,7 +1326,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1347,7 +1347,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/robots.txt",
+							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1355,7 +1355,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
+							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1369,7 +1369,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1390,7 +1390,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/robots.txt",
+							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1398,7 +1398,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
+							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1412,7 +1412,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -1433,7 +1433,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/robots.txt",
+							"uri": "https://beta.gouv.fr/",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1441,7 +1441,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://beta.gouv.fr/sitemap.xml",
+							"uri": "https://beta.gouv.fr/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1455,7 +1455,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "58"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -1492,7 +1492,23 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
+							"uri": "https://beta.gouv.fr/approche/construction",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://beta.gouv.fr/approche/fast",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"uri": "https://beta.gouv.fr/approche/investigation",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1508,14 +1524,6 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://beta.gouv.fr/eig/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
 							"uri": "https://beta.gouv.fr/fast/",
 							"method": "GET",
 							"param": "",
@@ -1524,15 +1532,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"uri": "https://beta.gouv.fr/manifeste",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://beta.gouv.fr/realisations/",
+							"uri": "https://beta.gouv.fr/incubateurs/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1562,7 +1562,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "58"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10031",
@@ -1605,7 +1605,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "935"
+					"sourceid": "1121"
 				}
 			]
 		}
