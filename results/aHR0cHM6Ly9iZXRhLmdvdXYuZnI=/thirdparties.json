@@ -3,10 +3,10 @@
   "cookies": [
     {
       "name": "_pk_id.1.968e",
-      "value": "06705ca5e6a4d135.1713054602.",
+      "value": "f43e8b0fcd77bd63.1713659499.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1747009802,
+      "expires": 1747614699,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -21,7 +21,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1713056402,
+      "expires": 1713661299,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -36,7 +36,7 @@
       "value": "1",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1713056402,
+      "expires": 1713661299,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -48,10 +48,10 @@
     },
     {
       "name": "_pk_id.21.968e",
-      "value": "b281c7eddca6df64.1713054602.",
+      "value": "7e878858ba6bb20e.1713659499.",
       "domain": "beta.gouv.fr",
       "path": "/",
-      "expires": 1747009802,
+      "expires": 1747614699,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -65,11 +65,11 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 14 Apr 2024 00:30:01 GMT",
-    "etag": "W/\"661a816e-9cfc\"",
-    "last-modified": "Sat, 13 Apr 2024 12:58:22 GMT",
+    "date": "Sun, 21 Apr 2024 00:31:38 GMT",
+    "etag": "W/\"6624144b-9d0e\"",
+    "last-modified": "Sat, 20 Apr 2024 19:15:23 GMT",
     "strict-transport-security": "max-age=31536000",
-    "x-request-id": "24dbea70-6039-412f-847c-f9c744ed5670"
+    "x-request-id": "64ca273f-2af6-42e3-a4d5-d8e0b6a68bf2"
   },
   "endpoints": [
     {
