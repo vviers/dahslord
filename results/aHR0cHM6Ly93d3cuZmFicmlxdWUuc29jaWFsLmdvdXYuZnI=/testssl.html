@@ -20,9 +20,9 @@
 #####################################################################</span>
 
   Using <i>OpenSSL 1.0.2-bad </i>  [~183 ciphers]
-  on fv-az1016-35:/home/testssl/bin/openssl.Linux.x86_64
+  on fv-az570-819:/home/testssl/bin/openssl.Linux.x86_64
 
-<span style="color:white;background-color:black;"> Start 2024-11-03 00:34:34                --&gt;&gt; 154.41.70.5:443 (www.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2024-11-10 00:34:03                --&gt;&gt; 154.41.70.5:443 (www.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
  rDNS (154.41.70.5):     --
  Service detected:       HTTP
@@ -81,7 +81,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 
 <span style="font-weight:bold;"> TLS extensions (standard)    </span>&quot;session ticket/#35&quot; &quot;renegotiation info/#65281&quot;
                               &quot;EC point formats/#11&quot; &quot;supported versions/#43&quot;
-                              &quot;key share/#51&quot;
+                              &quot;key share/#51&quot; &quot;extended master secret/#23&quot;
                               &quot;application layer protocol negotiation/#16&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>no -- no lifetime advertised
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
@@ -93,26 +93,27 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>EC <span style="color:#008817;">256</span> bits (curve P-256)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>04E66791CE2523DE5389D7161C38BE170F8B (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 90A02EFC37FD043A329C96F3C98F7A37E349F929
-                              SHA256 264A7B2E57B1CBBE42D2A792E64A1385BF51DDD8D8CA324156A0077A2D6F5239
+<span style="font-weight:bold;"> Serial                       </span>0362437F56069910C91317F012DF921C6694 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 051A43E66F86327038E4A51AE1803C79C8795F45
+                              SHA256 3100B9AE317140337F4A6CE42CFEB31B3EC7AF42D72423FBE638652BA211175B
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>wordpress.lafabriquenumerique.cloud-ed.fr </i> (CN in response to request w/o SNI: <i>TRAEFIK DEFAULT CERT </i>)
-<span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>wordpress.lafabriquenumerique.cloud-ed.fr
+<span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>fabrique.social.gouv.fr
+                              wordpress.lafabriquenumerique.cloud-ed.fr
                               www.fabrique.social.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">72 &gt;= 30 days</span> (2024-10-16 10:02 --&gt; 2025-01-14 10:02)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">65 &gt;= 30 days</span> (2024-10-16 10:02 --&gt; 2025-01-14 10:02)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
-<span style="font-weight:bold;"> OCSP URI                     </span>http://e5.o.lencr.org
+<span style="font-weight:bold;"> OCSP URI                     </span>http://e6.o.lencr.org
 <span style="font-weight:bold;"> OCSP stapling                </span><span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
 <span style="font-weight:bold;"> DNS CAA RR</span> (experimental)    <span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Certificate Transparency     </span><span style="color:#008817;">yes</span> (certificate extension)
 <span style="font-weight:bold;"> Certificates provided</span>        2
-<span style="font-weight:bold;"> Issuer                       </span><i>E5</i> (<i>Let&apos;s Encrypt</i> from <i>US</i>)
-<span style="font-weight:bold;"> Intermediate cert validity   </span>#1: <span style="color:#008817;">ok &gt; 40 days</span> (2027-03-12 23:59). <i>E5</i> &lt;-- <i>ISRG Root X1</i>
+<span style="font-weight:bold;"> Issuer                       </span><i>E6</i> (<i>Let&apos;s Encrypt</i> from <i>US</i>)
+<span style="font-weight:bold;"> Intermediate cert validity   </span>#1: <span style="color:#008817;">ok &gt; 40 days</span> (2027-03-12 23:59). <i>E6</i> &lt;-- <i>ISRG Root X1</i>
 <span style="font-weight:bold;"> Intermediate Bad OCSP</span> (exp.) <span style="color:#008817;">Ok</span>
 
 
@@ -206,7 +207,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>84
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2024-11-03 00:35:24 [  52s] --&gt;&gt; 154.41.70.5:443 (www.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2024-11-10 00:34:52 [  51s] --&gt;&gt; 154.41.70.5:443 (www.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
