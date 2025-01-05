@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Sun Dec 29 00:36:08 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.fabrique.social.gouv.fr
+# Nmap 7.92 scan initiated Sun Jan  5 00:36:01 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.fabrique.social.gouv.fr
 Nmap scan report for www.fabrique.social.gouv.fr (154.41.70.5)
 Host is up (0.085s latency).
 Not shown: 998 filtered tcp ports (no-response)
@@ -8,4 +8,4 @@ PORT    STATE SERVICE  VERSION
 |_http-server-header: nginx
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Dec 29 00:36:31 2024 -- 1 IP address (1 host up) scanned in 22.86 seconds
+# Nmap done at Sun Jan  5 00:36:23 2025 -- 1 IP address (1 host up) scanned in 22.75 seconds
